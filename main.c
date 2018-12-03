@@ -4,12 +4,14 @@
 #include "array/array.h"
 #include "pipe/pipe.h"
 #include "signal/signal.h"
+#include "read/read.h"
 
 int main() {
 //    printExample();
 //    structExample();
 //    arrayExample();
 //    pipeExample();
-    signalExample();
+//    signalExample();
+    readExample();
     return 0;
 }
