@@ -1,0 +1,24 @@
+1 szülő, 2 gyerek. Kevin, betörő.
+
+A feladat
+
+Kevin üzenetsoron küld a betörőknek egy random számot(20-50). A betörő fogadja a számot majd válaszol valami random szöveggel üzenetsoron.
+Kevin kiírja a képernyőre a választ.
+
+B feladat
+A betörő jelzést küld Kevinnek, ennek hatására Kevin pipe-on elküld egy stringet("festék").
+A betörő kiolvassa az üzenetet, majd random szám alapján kétféle üzenet közül elküldi valamelyiket, csővezetéken.
+
+C feladat
+Kevin osztott memóriába ír 5 darab boolean-t.(pl false,true,true,false,false; azaz 0,1,1,0,0).
+A betörő ezen az 5 számon megy végig, majd attól függően hogy igaz vagy hamis kétféle stringet ír osztott memóriába a köveketkező címzéssel:
+Az osztott memóriában először az 5 szám szerepel, majd az 5 üzenet rá, pl: 0,1,1,0,0,nem,igen,igen,nem,nem.
+Ha a gyerekek befejezték a működésüket a szülő kiírja az üzeneteiket az osztott memóriából, pl:
+0-nem
+1-igen
+1-igen
+0-nem
+0-nem
+
+D feladat
+A shared memory-t szemaforral védjük.
