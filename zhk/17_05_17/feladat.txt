@@ -1,0 +1,19 @@
+Taxi társaság
+
+A szülő folyamatosan várja egy utas jelentkezését.
+Amikor beérkezik egy utas(gyerek folyamat) kérése, a szülő hozzárendel egy taxit(másik gyerek folyamat).
+A szülő mindig megvárja a folyamatok végét.
+
+A feladat:
+Az utas jelentkezéskor pipe-on bemondja a lakcímét, ezt a szülő kiolvassa, majd képernyőre írja. A lakcím argumentum.
+
+B feladat:
+A szülő a taxinak elküldi message queue-n a lakcímet és az utas telefonszámát(PID-jét).
+A Taxi kiolvassa, képernyőre írja, majd nyugtázásképp visszaír üzenetsoron hogy elindult.
+
+C feladat:
+A taxis amint megérkezik, jelzést küld az utasnak. Az utas visszaküld egy jelzést egy távolságértékkel(1 és 20 közötti random szám).
+A taxis kiolvassa és képernyőre írja az árat. (Ár=Távolság*300+700)
+
+D feladat:
+A taxis a bevételt osztott memóriában jelenti a szülőnek. Az osztott memória hozzáférést szemaforral védjük.

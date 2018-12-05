@@ -1,0 +1,24 @@
+A feladat:
+
+Egyelőre egy vonalat üzemeltet a BKK, a társaság indít egy gyereket.
+A gyerek message queue-n megkapja hogy ő aznap a hányadik([1,max] véletlen szám), mennyi szerelvény van összesen(ez parancssori paraméter).
+Minden szerelvény 10% eséllyel elcsúszik egy banánhéjon, vagy lefagy(10%-10% független esélyek)
+
+Minden szerelvény kiírja hogy ő hányadik, mennyi lesz még utána, valamint hogy sikeren végigment-e.
+
+A végállomásról jelzést küld a parent-nek hogy beért vagy bevontatták, majd az okot elküldi üzenetsoron, amit a szülő kiír.
+
+B feladat:
+
+Több járatot indítunk, parancssorban van hogy mennyit.
+Ha egy szerelvény beért akkor indul a következő. Ha egy meghibásodik, indít helyette egy pótot, a pót ugyanúgy kezelendő, de ez már nem indíthat pótot.
+A pótnak a szülő az üzenetsorban azt küldi el hogy ő egy pótszerelvény, és hogy hányadik járatot mentesíti. Ezt a pót kiírja.
+A program végén a szülő kiírja hogy hány pótot kellett indítani.
+
+C feladat:
+A járatok shared_memory-ba írják hogy hány perc alatt teljesítették az utat.
+Kiírja a járat számát, és az utazási időt. Ha elromlott akkor az utazási idő -1, ha nem akkor random 10-30 közötti szám.
+A nap végén azt is kiírja a szülő hogy mennyi volt az átlag utazási idő.
+
+D feladat:
+Több vonal esetén szemafor védelem a shared_memory elérésnél.

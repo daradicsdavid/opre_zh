@@ -1,0 +1,2 @@
+Include semaphore.h
+Compile the code by linking with -lpthread -lrt
