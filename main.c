@@ -7,6 +7,7 @@
 #include "read/read.h"
 #include "message_queue/zh/zh_example_signal.h"
 #include "shared_memory/zh/zh_example_shared_memory.h"
+#include "semaphore/zh/zh_example_semaphore.h"
 
 int main() {
 //    printExample();
@@ -17,6 +18,7 @@ int main() {
 //    readExample();
 //    messageQueueExampe();
 //    signalExample();
-    sharedMemoryExample();
+//    sharedMemoryExample();
+    semaphoreExample();
     return 0;
 }
