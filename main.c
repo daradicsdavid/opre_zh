@@ -5,6 +5,7 @@
 #include "pipe/pipe.h"
 #include "signal/signal.h"
 #include "read/read.h"
+#include "message_queue/zh/zh_example.h"
 
 int main() {
 //    printExample();
@@ -12,6 +13,7 @@ int main() {
 //    arrayExample();
 //    pipeExample();
 //    signalExample();
-    readExample();
+//    readExample();
+    messageQueueExampe();
     return 0;
 }

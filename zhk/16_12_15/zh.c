@@ -11,7 +11,6 @@
 #include <sys/ipc.h>
 #include <sys/msg.h>
 #include <time.h>
-#include <evrpc.h>
 #include <sys/wait.h>
 
 #define STR_SIZE 256

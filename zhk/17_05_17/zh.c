@@ -10,7 +10,7 @@
 #include <sys/sem.h>
 #include <sys/msg.h>
 #include <sys/wait.h>
-#include <evrpc.h>
+#include <time.h>
 
 #define STR_SIZE 256
 
@@ -23,9 +23,8 @@ typedef struct {
 } msg_t;
 
 void initrand() {
-    struct timeval time;
-    gettimeofday(&time, NULL);
-    srand((time.tv_sec * 1000) + (time.tv_usec / 1000));
+    time_t t;
+    srand((unsigned) time(&t));
 }
 
 void up(sem_id) {

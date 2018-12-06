@@ -9,7 +9,7 @@ struct mesg_buffer {
     char mesg_text[100];
 } message;
 
-int send() {
+int send_message_queue_example() {
     key_t key;
     int msgid;
 
@@ -22,8 +22,7 @@ int send() {
     message.mesg_type = 1;
 
     printf("Write Data : ");
-    gets(message.mesg_text);
-
+    scanf("%[^\n]", message.mesg_text);
     // msgsnd to send message
     msgsnd(msgid, &message, sizeof(message), 0);
 
@@ -33,7 +32,7 @@ int send() {
     return 0;
 }
 
-int receive() {
+int receive_message_queue_example() {
     key_t key;
     int msgid;
 

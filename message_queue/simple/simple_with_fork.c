@@ -12,7 +12,7 @@ struct message {
     char mtext[8192];
 };
 
-int main(void)
+int test_message_queue(void)
 {
     /* create message queue */
     int msqid = msgget(IPC_PRIVATE, IPC_CREAT | 0600);

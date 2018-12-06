@@ -13,7 +13,7 @@ int send() {
     char *str = (char *) shmat(shmid, (void *) 0, 0);
 
     printf("Write Data : ");
-    gets(str);
+    scanf("%[^\n]", str);
 
     printf("Data written in memory: %s\n", str);
 
